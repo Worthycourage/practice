@@ -1,7 +1,10 @@
-const toggleswitch=document.querySelector('input[type="checkbox"]')
-toggleswitch.addEventListener('click', function(e){
-    const {checked}=toggleSwitch;
-    document.body.className=toggleSwitch.checked ? 'dark' : ' '
-    localStorage.setItem('darkModeEnabled',)
-    
-})
+
+
+function togglealltodos() {
+const todos = document.querySelectorAll(‘li’)
+
+        for(let li of todos) {
+            li.classlist.toggle('completed');
+        }
+}
+}
