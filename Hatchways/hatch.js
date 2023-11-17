@@ -9,13 +9,17 @@ imageFIleInput.addEventListener("change", () => {
     const imageDataUrl = URL.createObjectURL(imageFileInput.files[0]);
     image = new Image();
     image.src = imageDataUrl;
-}
+},
 
-
-Image.addEventListener("load", () => {
+    
+    image.addEventListener("load", () => {
     updateMemeCanvas(canvas, image, topText.value, bottomText.value);
-},  { (once: true )};
-});
+    console.log ("Loaded");
+    }));
+
+
+
+
 
 topTextInput.addEventListener("change", () => {
     updateMemeCanvas(canvas, image, topTextInput.value, bottomTextInput.value);
