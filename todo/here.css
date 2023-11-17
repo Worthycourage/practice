@@ -1,0 +1,16 @@
+.todo{
+    Font-size: 40px
+    Color: purple;
+    }
+
+
+    .todo:hover{
+    Background-color: rgba(0,0,0,.1);
+    Transition: all 200 ms;
+    }
+    
+    .completed {
+        color: gray
+        text-decoration: line-through;
+    }
+    
