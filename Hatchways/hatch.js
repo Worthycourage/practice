@@ -11,9 +11,10 @@ imageFIleInput.addEventListener("change", () => {
     image.src = imageDataUrl;
 }
 
-image.addEventListener("load", () => {
+
+Image.addEventListener("load", () => {
     updateMemeCanvas(canvas, image, topText.value, bottomText.value);
-}, { once: true });
+},  { (once: true )};
 });
 
 topTextInput.addEventListener("change", () => {
