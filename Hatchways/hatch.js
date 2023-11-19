@@ -11,11 +11,18 @@ imageFIleInput.addEventListener("change", () => {
     image.src = imageDataUrl;
 },
 
-    
+
     image.addEventListener("load", () => {
-    updateMemeCanvas(canvas, image, topText.value, bottomText.value);
-    console.log ("Loaded");
+        updateMemeCanvas(canvas, image, topText.value, bottomText.value);
+        console.log("Loaded");
     }));
+
+const button =
+    document.querySelectogetElementById("imageFileInput");
+button.addEventListener("click", (click) => {
+    click.target.remove()
+});
+
 
 
 
