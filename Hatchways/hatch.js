@@ -37,7 +37,7 @@ bottomTextInput.addEventListener("change", () => {
     updateMemeCanvas(canvas, image, topTextInput.value, bottomTextInput.value);
 
 });
-function updateMemeCanvas(canvas, image.topText, bottomText) {
+function updateMemeCanvas(canvas, topText, bottomText) {
     const ctx = canvas.getContext("2d");
     const width = image.width;
     const height = image.height;
